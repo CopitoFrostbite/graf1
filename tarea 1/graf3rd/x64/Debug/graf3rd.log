@@ -1,3 +1,3 @@
 ﻿  clase1.cpp
-C:\Users\rober\source\repos\graf3rd\graf3rd\clase1.cpp(125,5): warning C4305: 'initializing': truncation from 'double' to 'float'
-  graf3rd.vcxproj -> C:\Users\rober\source\repos\graf3rd\x64\Debug\graf3rd.exe
+C:\Users\rober\OneDrive\Escritorio\Graf 1\graf3rd\graf1\tarea 1\graf3rd\clase1.cpp(145,5): warning C4305: 'initializing': truncation from 'double' to 'float'
+  graf3rd.vcxproj -> C:\Users\rober\OneDrive\Escritorio\Graf 1\graf3rd\graf1\tarea 1\x64\Debug\graf3rd.exe

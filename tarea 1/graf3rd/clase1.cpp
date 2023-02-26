@@ -107,21 +107,41 @@ int main()
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     float vertices[] = {
-        -0.5f,0.5f,0.0f,    0.976, 1, 0.101,  // 0
-        0.0f, 0.5f, 0.0f,   0.976, 1, 0.101,  // 1
-        -0.5f, -0.0f, 0.0f, 0.976, 1, 0.101,  // 2 
+        -0.5f,-0.5f,0.0f,    0.976, 0, 0.101,  // 0
+        -0.5f, 0.5f, 0.0f,   0.976, 0, 0.101,  // 1
+        -0.0f, -0.0f, 0.0f, 0.976, 0, 0.101,  // 2 
 
-        0.0f, 0.5f, 0.0f,   0.290, 0.643, 0.254,  // 3
-        0.0f, 0.0f, 0.0f,   0.290, 0.643, 0.254,  // 4
-        -0.5f,  0.0f, 0.0f, 0.290, 0.643, 0.254,   // 5
+        -0.5f, 0.5f, 0.0f,   0, 1, 0.254,  // 3
+        0.5f, 0.5f, 0.0f,   0, 1, 0.254,  // 4
+        -0.0f,  0.0f, 0.0f, 0, 1, 0.254,   // 5
 
-        0.25f,  0.8f, 0.0f, 1, 0, 0,        // 6
-        0.0f,  0.5f, 0.0f,  1, 0, 0,        // 7
-        -0.5f,  0.0f, 0.0f, 1, 0, 0,        // 8
+        0.0f,  0.0f, 0.0f, 0, 0, 1,        // 6
+        0.25f,  0.25f, 0.0f,  0, 0, 1,        // 7
+        0.25f,  -0.25f, 0.0f, 0, 0, 1,        // 8
 
-        0.0f,  0.8f, 0.0f,  1, 0, 0,
-        0.0f,  0.5f, 0.0f,  1, 0, 0,
-        0.5f, 0.0f, 0.0f,  1, 0, 0,
+        0.5f,  0.5f, 0.0f,  0, 1, 1,
+        0.25f,  0.25f, 0.0f,  0, 1, 1,
+        0.25f, -0.25f, 0.0f,  0, 1, 1,
+
+        0.5f,  0.0f, 0.0f,  0, 1, 1,
+        0.5f,  0.5f, 0.0f,  0, 1, 1,
+        0.25f, -0.25f, 0.0f,  0, 1, 1,
+
+        0.0f,  -0.5f, 0.0f,  1, 0, 1,
+        -0.25f,  -0.25f, 0.0f,  1, 0, 1,
+        -0.5f, -0.5f, 0.0f,  1, 0, 1,
+
+         0.0f,  -0.0f, 0.0f,  1, 1, 0,
+        -0.25f,  -0.25f, 0.0f,  1, 1, 0,
+        -0.0f, -0.5f, 0.0f,  1, 1, 0,
+
+        0.0f,  -0.0f, 0.0f,  1, 1, 0,
+        0.25f,  -0.25f, 0.0f,  1, 1, 0,
+        -0.0f, -0.5f, 0.0f,  1, 1, 0,
+
+        0.5f,  -0.0f, 0.0f,  0.4, 0, 0.7,
+        0.0f,  -0.5f, 0.0f,  0.4, 0, 0.7,
+        0.5f, -0.5f, 0.0f,  0.4, 0, 0.7,
     };
     unsigned int indices[] = {  // note that we start from 0!
         0, 1, 3,  // first Triangle
@@ -184,7 +204,7 @@ int main()
         glPointSize(20.0);
 
         glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-        glDrawArrays(GL_TRIANGLES, 0, 15);
+        glDrawArrays(GL_TRIANGLES, 0, 27);
         // glDrawElements(GL_TRIANGLES, 12, GL_UNSIGNED_INT, 0);
         // glBindVertexArray(0); // no need to unbind it every time 
 

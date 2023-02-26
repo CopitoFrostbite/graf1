@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\src\glad.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\src\glad.c" />
     <ClCompile Include="clase1.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
